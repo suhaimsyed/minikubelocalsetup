@@ -37,7 +37,8 @@ To start and undo a rolling update
 ```kubectl set image deployments/spring-boot-demo springbootdemo=jocatalin/kubernetes-bootcamp:v2```
 ```kubectl rollout undo deployments/spring-boot-demo```
 
+To start or apply a deployment
+```kubectl get -f  deployment.yaml```
 
-
-kubectl wait --for=condition=ready pod -l app=inventory
-kubectl wait --for=condition=ready pod -l app=system
+```kubectl wait --for=condition=ready pod -l app=inventory```
+```kubectl wait --for=condition=ready pod -l app=system```
