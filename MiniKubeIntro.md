@@ -1,4 +1,3 @@
-1. Introduction to Minikube
 
 Reference : https://kubernetes.io/docs/tutorials/hello-minikube/
 
@@ -37,3 +36,8 @@ Status of rolling update
 To start and undo a rolling update
 ```kubectl set image deployments/spring-boot-demo springbootdemo=jocatalin/kubernetes-bootcamp:v2```
 ```kubectl rollout undo deployments/spring-boot-demo```
+
+
+
+kubectl wait --for=condition=ready pod -l app=inventory
+kubectl wait --for=condition=ready pod -l app=system
